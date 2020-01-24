@@ -24,13 +24,19 @@ def init(size=None):
             b = (i % 5) * 255 / 5
             pygame.draw.rect(disp, (r, g, b), (x, y, rectsize, rectsize))
             i += 1
+
+    pygame.display.update()
+
+    # TODO: how to wait for displayed image?
+
+    # wait for displaying image
     pygame.display.update()
     pygame.display.update()
     pygame.display.update()
     pygame.display.update()
-    pygame.display.update()
+    sleep(5)
+
     pygame.image.save(disp, "/tmp/fillscreen.bmp")  # TODO
-    sleep(0.1)
 
 
 @entrypoint
