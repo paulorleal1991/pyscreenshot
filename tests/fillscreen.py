@@ -9,15 +9,15 @@ def init(size=None):
 
     pygame.display.init()
     # pygame.mixer.quit()  # to avoid 100% CPU load
-    pygame.mouse.set_visible(0)
+    # pygame.mouse.set_visible(0)
 
-    if size:
-        disp = pygame.display.set_mode(size)
-    else:
-        disp = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+    # if size:
+    #     disp = pygame.display.set_mode(size)
+    # else:
+    #     disp = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
-    w, h = pygame.display.get_surface().get_size()
-    i = 0
+    # w, h = pygame.display.get_surface().get_size()
+    # i = 0
     # for x in range(0, w, rectsize):
     #     for y in range(0, h, rectsize):
     #         r = x * 255 / w
@@ -53,7 +53,7 @@ def init(size=None):
     else:
         disp = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
-    # w, h = pygame.display.get_surface().get_size()
+    w, h = pygame.display.get_surface().get_size()
     i = 0
     for x in range(0, w, rectsize):
         for y in range(0, h, rectsize):
