@@ -56,6 +56,8 @@ def init(size=None):
     sleep(5)
 
     pygame.image.save(disp, "/tmp/fillscreen.bmp")  # TODO
+    print(pygame.display.Info())
+    print(pygame.display.list_modes())
 
 
 @entrypoint

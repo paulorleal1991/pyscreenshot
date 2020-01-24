@@ -60,5 +60,6 @@ def _backend_check(backend, childprocess):
 
 def backend_to_check(backend):
     fillscreen.init()
+    fillscreen.init()
     _backend_check(backend, childprocess=True)
     # _backend_check(backend, childprocess=False) # TODO: test childprocess=False
