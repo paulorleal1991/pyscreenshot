@@ -1,7 +1,7 @@
 #!/bin/bash
 DIST=$1
 set -e
-TESTS="easy test_imagemagick.py test_scrot.py test_def.py"
+TESTS="test_imagemagick.py test_scrot.py test_def.py"
 
 if [[ ${DIST} != "general" ]];then
     PYTHON_VERSION=$2
@@ -29,6 +29,6 @@ fi
 #nosetests -v test_mac_quartz.py
 #nosetests -v test_mac_screencapture.py
 
-nosetests -v  ${TESTS}
+nosetests -v  ${TESTS} easy
 
 
