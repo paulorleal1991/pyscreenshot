@@ -9,7 +9,7 @@ def init(size=None):
 
     pygame.display.init()
     # pygame.mixer.quit()  # to avoid 100% CPU load
-    # pygame.mouse.set_visible(0)
+    pygame.mouse.set_visible(0)
 
     if size:
         disp = pygame.display.set_mode(size)
@@ -44,7 +44,7 @@ def init(size=None):
     # print(pygame.display.list_modes())
 
     #########################################
-    pygame.display.init()
+    # pygame.display.init()
     # pygame.mixer.quit()  # to avoid 100% CPU load
     # pygame.mouse.set_visible(0)
 
