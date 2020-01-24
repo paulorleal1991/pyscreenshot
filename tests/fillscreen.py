@@ -11,10 +11,10 @@ def init(size=None):
     # pygame.mixer.quit()  # to avoid 100% CPU load
     # pygame.mouse.set_visible(0)
 
-    # if size:
-    #     disp = pygame.display.set_mode(size)
-    # else:
-    #     disp = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+    if size:
+        disp = pygame.display.set_mode(size)
+    else:
+        disp = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
     # w, h = pygame.display.get_surface().get_size()
     # i = 0
