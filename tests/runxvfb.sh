@@ -1,7 +1,7 @@
 #!/bin/bash
 DIST=$1
 set -e
-TESTS="easy test_scrot.py test_imagemagick.py test_def.py"
+TESTS="easy test_imagemagick.py test_scrot.py test_def.py"
 
 if [[ ${DIST} != "general" ]];then
     PYTHON_VERSION=$2
