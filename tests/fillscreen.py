@@ -26,22 +26,22 @@ def init(size=None):
     #         pygame.draw.rect(disp, (r, g, b), (x, y, rectsize, rectsize))
     #         i += 1
 
-    pygame.display.update()
+    # pygame.display.update()
 
     # TODO: how to wait for displayed image?
 
     # wait for displaying image
-    pygame.display.update()
-    pygame.display.update()
-    pygame.display.update()
-    pygame.display.update()
-    pygame.display.update()
-    pygame.display.update()
-    pygame.display.update()
-    sleep(1)
+    # pygame.display.update()
+    # pygame.display.update()
+    # pygame.display.update()
+    # pygame.display.update()
+    # pygame.display.update()
+    # pygame.display.update()
+    # pygame.display.update()
+    # sleep(1)
 
-    print(pygame.display.Info())
-    print(pygame.display.list_modes())
+    # print(pygame.display.Info())
+    # print(pygame.display.list_modes())
 
     #########################################
     pygame.display.init()
