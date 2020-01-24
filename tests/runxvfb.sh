@@ -1,6 +1,8 @@
 #!/bin/bash
 DIST=$1
 set -e
+sleep 1
+
 TESTS="test_imagemagick.py test_scrot.py test_def.py"
 
 if [[ ${DIST} != "general" ]];then

@@ -53,7 +53,7 @@ def init(size=None):
     pygame.display.update()
     pygame.display.update()
     pygame.display.update()
-    sleep(15)
+    sleep(5)
 
     pygame.image.save(disp, "/tmp/fillscreen.bmp")  # TODO
 
