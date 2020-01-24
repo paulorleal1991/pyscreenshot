@@ -43,6 +43,11 @@ def init(size=None):
     print(pygame.display.Info())
     print(pygame.display.list_modes())
 
+    #########################################
+    pygame.display.init()
+    # pygame.mixer.quit()  # to avoid 100% CPU load
+    pygame.mouse.set_visible(0)
+
 
 @entrypoint
 def main(size=None):
