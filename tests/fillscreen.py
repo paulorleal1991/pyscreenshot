@@ -1,3 +1,5 @@
+from time import sleep
+
 import pygame
 from entrypoint2 import entrypoint
 
@@ -28,6 +30,7 @@ def init(size=None):
     pygame.display.update()
     pygame.display.update()
     pygame.image.save(disp, "/tmp/fillscreen.bmp")  # TODO
+    sleep(0.1)
 
 
 @entrypoint
