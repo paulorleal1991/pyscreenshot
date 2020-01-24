@@ -51,8 +51,8 @@ def backend_ref(backend, childprocess=True, refimgpath=""):
 
 def _backend_check(backend, childprocess, refimgpath):
     enable_ref = True
-    if sys.platform == "darwin":
-        enable_ref = False  # TODO
+    # if sys.platform == "darwin":
+    #     enable_ref = False  # TODO
     if enable_ref:
         backend_ref(
             backend, childprocess=childprocess, refimgpath=refimgpath,
@@ -64,8 +64,6 @@ def _backend_check(backend, childprocess, refimgpath):
 
 
 def backend_to_check(backend):
-    with TempDir() as d:
-        refimgpath = d / "ref.bmp"
-        fillscreen.init(refimgpath)
-        _backend_check(backend, childprocess=True, refimgpath=refimgpath)
-        # _backend_check(backend, childprocess=False) # TODO: test childprocess=False
+    refimgpath = fillscreen.init()
+    _backend_check(backend, childprocess=True, refimgpath=refimgpath)
+    # _backend_check(backend, childprocess=False) # TODO: test childprocess=False

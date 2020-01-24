@@ -7,8 +7,8 @@ nosetests -v  \
     test_mac_screencapture.py   \
     test_pyqt5.py       \
     test_pyside2.py     \
-    test_qtpy.py \
-    easy
+    test_qtpy.py 
+    # easy
     
 # nosetests -v test_pygdk3_conflict.py
 # nosetests -v test_scrot.py
