@@ -41,7 +41,7 @@ def run(refimgpath, size=None):
             if event.type == pygame.QUIT:
                 running = False
         pygame.display.update()
-        clock.tick(1)
+        clock.tick(10)
     pygame.quit()
 
 
@@ -52,7 +52,7 @@ def init():
     global first, refimgpath
     if first:
         first = False
-        d = tempfile.mkdtemp(prefix="fillscreen")  
+        d = tempfile.mkdtemp(prefix="fillscreen")
         d = Path(d)
         atexit.register(d.rmtree)
         refimgpath = d / "ref.bmp"
