@@ -1,6 +1,6 @@
 pillow
 paver
-path
+path.py
 cogapp==2.3
 sphinx
 Requests>=2.12
