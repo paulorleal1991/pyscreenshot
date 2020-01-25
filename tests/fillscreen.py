@@ -54,7 +54,7 @@ def init():
         first = False
         d = tempfile.mkdtemp(prefix="fillscreen")  
         d = Path(d)
-        atexit.register(d.rmdir)
+        atexit.register(d.rmtree)
         refimgpath = d / "ref.bmp"
         python = sys.executable
         cmd = [
