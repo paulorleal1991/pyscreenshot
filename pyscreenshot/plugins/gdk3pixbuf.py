@@ -21,8 +21,8 @@ class Gdk3PixbufWrapper(object):
     childprocess = False
 
     def __init__(self):
-        if sys.platform == "darwin":
-            raise Gdk3BackendError("osx not supported")  # TODO
+        # if sys.platform == "darwin":
+        #     raise Gdk3BackendError("osx not supported")  # TODO
         global Gdk, GdkPixbuf
         import gi
 

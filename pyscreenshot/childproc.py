@@ -44,10 +44,10 @@ def childprocess_grab_popen(backend, bbox):
     x1, y1, x2, y2 = map(str, bbox)
     with TemporaryDirectory(prefix="pyscreenshot") as tmpdirname:
         filename = os.path.join(tmpdirname, "screenshot.png")
-
+        bbox = ":".join(map(str, (x1, y1, x2, y2)))
         p = proc(
-            "pyscreenshot.cli.grab_to_file",
-            [filename, x1, y1, x2, y2, "--backend", backend],
+            "pyscreenshot.cli.grab",
+            ["--filename", filename, "--bbox", bbox, "--backend", backend],
         )
         if p.return_code != 0:
             # log.debug(p)

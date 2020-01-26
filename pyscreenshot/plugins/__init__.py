@@ -48,8 +48,8 @@ elif sys.platform == "darwin":
         ]
         + _qt_backends
         + [
-            # wxscreen.WxScreen,    #TODO
-            # gdk3pixbuf.Gdk3PixbufWrapper, #TODO
+            wxscreen.WxScreen,  # TODO
+            # gdk3pixbuf.Gdk3PixbufWrapper,  # TODO
             # gtkpixbuf.GtkPixbufWrapper,
         ]
     )
